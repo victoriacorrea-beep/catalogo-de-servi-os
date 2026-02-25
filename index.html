@@ -49,7 +49,6 @@
             padding: 20px 0;
         }
 
-        /* Fixed Header */
         header {
             position: fixed;
             top: 0;
@@ -64,7 +63,6 @@
             padding: 10px 0;
         }
 
-        /* Hero */
         .hero {
             background-color: var(--color-header-bg);
             padding: 30px 0 10px 0;
@@ -72,7 +70,6 @@
             border-bottom: 4px solid var(--color-accent);
         }
 
-        /* Service Tree */
         .service-tree {
             display: flex;
             flex-direction: column;
@@ -125,7 +122,6 @@
             background-color: var(--color-header-text); transform: translateX(-50%); z-index: 1;
         }
 
-        /* Sub-nodes / Request Types */
         .request-type-block { padding-top: 15px; width: 100%; }
         .request-type-container {
             border: 1px solid var(--color-light-gray);
@@ -150,7 +146,6 @@
             font-size: 0.6rem; line-height: 1.1; min-height: 20px; font-weight: 500;
         }
 
-        /* Detail Panels */
         #panel-container { margin-top: 50px; }
         #form-detail-panel, #backoffice-panel {
             min-height: 300px; padding: 40px; background-color: var(--color-header-bg);
@@ -170,7 +165,6 @@
         }
         .panel-nav button.active { color: var(--color-header-text); border-bottom-color: var(--color-accent); }
 
-        /* Forms */
         #form-detail-content h2 { margin-bottom: 20px; font-size: 1.5rem; color: var(--color-header-text); }
         #form-detail-content form { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding-bottom: 20px; }
         .form-field-group { display: flex; flex-direction: column; gap: 5px; }
@@ -178,26 +172,30 @@
         .form-field-group input, .form-field-group textarea, .form-field-group select {
             padding: 10px; border: 1px solid var(--color-mid-gray); border-radius: 4px; font-family: var(--font-body); font-size: 0.9rem;
         }
+        .form-field-checkbox { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; color: var(--color-dark-gray); font-weight: 600; }
+        .form-field-checkbox input { width: 18px; height: 18px; }
+        
         .submit-area { grid-column: 1 / -1; text-align: center; margin-top: 30px; }
         .submit-area button {
             cursor: pointer; display: inline-block; padding: 12px 30px; background-color: var(--color-highlight);
-            color: var(--color-header-text) !important; font-family: var(--font-header); font-weight: 700; border: none; border-radius: 4px; font-size: 1rem;
+            color: var(--color-header-text) !important; font-family: var(--font-header); font-weight: 700; border: none; border-radius: 4px; font-size: 1rem; transition: background-color 0.2s, transform 0.1s;
         }
 
-        /* Feedback Message */
         #form-feedback { display: none; padding: 20px; text-align: center; background: #d4edda; color: #155724; border-radius: 6px; margin-top: 20px; font-weight: 600; }
 
-        /* Backoffice */
         .backoffice-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
         .metadata-section { padding: 15px; background: #fdfdfd; border: 1px solid #eee; border-radius: 4px; }
         .metadata-section h3 { font-size: 0.9rem; color: var(--color-accent); margin-bottom: 10px; border-bottom: 1px solid #eee; }
         .metadata-section div { font-size: 0.85rem; margin-bottom: 5px; }
-        .metadata-section strong { display: inline-block; width: 130px; color: var(--color-dark-gray); }
+        .metadata-section strong { display: inline-block; width: 145px; color: var(--color-dark-gray); }
         .labels-box span {
             display: inline-block; padding: 2px 6px; background: var(--color-light-gray);
             margin: 2px; border-radius: 3px; font-size: 0.7rem; color: var(--color-accent); font-weight: 600;
         }
         .workflow-link { color: var(--color-accent); text-decoration: underline; font-weight: 600; }
+        .matrix-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.75rem; }
+        .matrix-table th, .matrix-table td { border: 1px solid #eee; padding: 6px; text-align: left; }
+        .matrix-table th { background: #f8f9fa; color: var(--color-header-text); }
 
         @media (max-width: 768px) {
             .category-level { flex-direction: column; align-items: center; }
@@ -209,21 +207,23 @@
 <body>
 
     <header>
-        <svg id="Camada_2" style="height: 70px; width: auto;" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 837.7 245.66">
+        <!-- Logo Clever (C-L-E-V-E-R com um único L e V central) -->
+        <svg id="Logo_Clever" style="height: 70px; width: auto;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 837.7 245.66">
             <defs>
-                <style>.cls-1{fill:none;}.cls-2{clip-path:url(#clippath-1);}.cls-3{fill:url(#Gradiente_sem_nome_10);}.cls-4{fill:#24282a;}.cls-5{clip-path:url(#clippath);}</style>
-                <linearGradient id="Gradiente_sem_nome_10" data-name="Gradiente sem nome 10" x1="5622.93" y1="5321.6" x2="5624.11" y2="5322.12" gradientTransform="translate(-1349792.92 1307463.94) scale(240.05 -245.66)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1b1f59"/><stop offset="1" stop-color="#0fc"/></linearGradient>
+                <style>.cls-logo-1{fill:#24282a;}.cls-logo-2{fill:url(#grad_logo);}</style>
+                <linearGradient id="grad_logo" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#1b1f59" />
+                    <stop offset="100%" style="stop-color:#0fc" />
+                </linearGradient>
             </defs>
-            <g id="Camada_1" data-name="Camada 1">
-                <g id="Grupo_149" data-name="Grupo 149">
-                    <!-- Adjusted Clever Logo Paths Spells C-L-E-V-E-R with one L -->
-                    <path class="cls-4" d="M452.05,129.69v18.74c0,1.99-1.61,3.6-3.6,3.6h-67.98c-1.99,0-3.6-1.61-3.6-3.6h0V42.63c0-1.99,1.61-3.6,3.6-3.6h20.9c1.99,0,3.6,1.61,3.6,3.6h0v83.46h43.47c1.99,0,3.6,1.61,3.61,3.59h0Z"/> <!-- L -->
-                    <path class="cls-4" d="M370.4,140.66c.53.99.24,2.22-.67,2.87-26.46,18.91-63.23,12.79-82.14-13.66..."/> <!-- C -->
-                    <path class="cls-4" d="M487.03,64.97v18.73h37.96c1.99,0,3.6,1.61,3.6,3.6v16.46..."/> <!-- E -->
-                    <path class="cls-3" d="M239.71,6.67l-91.78,233.94c-1.2,3.05-4.14,5.05-7.41,5.05h-41c-3.27,0-6.21-2.01-7.41-5.05L.34,6.67..."/> <!-- Big V Symbol -->
-                    <path class="cls-4" d="M691.37,64.97v18.73h37.96c1.99,0,3.6,1.61,3.6,3.6..."/> <!-- E -->
-                    <path class="cls-4" d="M821.22,116.37l-2.89-5.46c17.91-12.4,22.38-36.97..."/> <!-- R -->
-                </g>
+            <g>
+                <path class="cls-logo-1" d="M370.4,140.66c.53.99.24,2.22-.67,2.87-26.46,18.91-63.23,12.79-82.14-13.66-18.91-26.46-12.79-63.23,13.66-82.14,20.48-14.64,47.99-14.64,68.47,0,.91.66,1.19,1.88.67,2.88l-10.45,19.73c-.93,1.76-3.11,2.42-4.87,1.49-.2-.1-.38-.23-.55-.36-13.36-10.51-32.71-8.21-43.22,5.15-10.51,13.36-8.21,32.71,5.15,43.22,11.17,8.79,26.91,8.79,38.08,0,1.55-1.24,3.82-.99,5.06.57.14.17.26.36.37.56l10.44,19.73Z"/>
+                <path class="cls-logo-1" d="M452.05,129.69v18.74c0,1.99-1.61,3.6-3.6,3.6h-67.98c-1.99,0-3.6-1.61-3.6-3.6h0V42.63c0-1.99,1.61-3.6,3.6-3.6h20.9c1.99,0,3.6,1.61,3.6,3.6h0v83.46h43.47c1.99,0,3.6,1.61,3.61,3.59h0Z"/>
+                <path class="cls-logo-1" d="M487.03,64.97v18.73h37.96c1.99,0,3.6,1.61,3.6,3.6v16.46c0,1.99-1.61,3.6-3.6,3.6h-37.96v18.73h49.15c1.99,0,3.6,1.61,3.6,3.6v18.74c0,1.99-1.61,3.6-3.6,3.6h-73.66c-1.99,0-3.6-1.61-3.6-3.6V42.63c0-1.99,1.61-3.6,3.6-3.6h73.66c1.99,0,3.6,1.61,3.6,3.6v18.65c0,2.04-1.65,3.69-3.69,3.69h-49.06Z"/>
+                <path class="cls-logo-1" d="M656.55,42.1l-42.22,107.61c-.55,1.4-1.9,2.32-3.41,2.32h-18.86c-1.51,0-2.86-.92-3.41-2.32l-42.22-107.61c-.45-1.15.11-2.46,1.27-2.91.26-.1.54-.16.82-.16h24.31c1.54,0,2.92.96,3.45,2.41l25.21,69.57,15.99-44.09c.27-.74-.12-1.55-.85-1.82-.15-.06-.32-.08-.48-.08h-15.82c-1.24,0-2.25-1-2.25-2.25,0-.26.05-.52.13-.77l7.45-20.56c.53-1.45,1.9-2.41,3.44-2.41h45.35c1.24,0,2.25,1.01,2.25,2.25,0,.28-.05.56-.16.82"/>
+                <path class="cls-logo-1" d="M691.37,64.97v18.73h37.96c1.99,0,3.6,1.61,3.6,3.6v16.46c0,1.99-1.61,3.6-3.6,3.6h-37.96v18.73h49.15c1.99,0,3.6,1.61,3.6,3.6v18.74c0,1.99-1.61,3.6-3.6,3.6h-73.66c-1.99,0-3.6-1.61-3.6-3.6V42.63c0-1.99,1.61-3.6,3.6-3.6h73.66c1.99,0,3.6,1.61,3.6,3.6v18.65c0,2.04-1.65,3.69-3.69,3.69h-49.06Z"/>
+                <path class="cls-logo-1" d="M821.22,116.37l-2.89-5.46c17.91-12.4,22.38-36.97,9.99-54.88-7.37-10.65-19.49-17-32.44-17h-41.65c-1.99,0-3.6,1.61-3.6,3.6v105.8c0,1.99,1.61,3.6,3.6,3.6h20.81c2.04,0,3.7-1.66,3.7-3.7v-30.56c0-.77.63-1.4,1.4-1.4h8.8c.52,0,1,.29,1.24.75l.23.43,17.21,32.51c.64,1.22,1.91,1.98,3.29,1.98h23.18c2,0,3.62-1.63,3.62-3.63,0-.59-.15-1.17-.42-1.69l-16.06-30.34ZM805.1,85.93c-2.59,4.22-7.18,6.79-12.13,6.78h-14.24v-28.46h14.9v.02c7.86.37,13.93,7.03,13.56,14.89-.11,2.4-.83,4.73-2.09,6.78h0Z"/>
+                <path class="cls-logo-2" d="M239.71,6.67l-91.78,233.94c-1.2,3.05-4.14,5.05-7.41,5.05h-41c-3.27,0-6.21-2.01-7.41-5.05L.34,6.67C-.64,4.16.59,1.32,3.1.34,3.67.11,4.28,0,4.89,0h52.84c3.35,0,6.34,2.1,7.48,5.25l54.82,151.23,34.75-95.85c.58-1.6-.25-3.37-1.85-3.95-.34-.12-.69-.19-1.05-.18h-34.39c-2.7,0-4.88-2.19-4.88-4.88,0-.57.1-1.13.29-1.66l16.2-44.7c1.14-3.15,4.13-5.25,7.49-5.25h98.59c2.7,0,4.88,2.19,4.88,4.88,0,.61-.11,1.22-.34,1.78"/>
             </g>
         </svg>
     </header>
@@ -240,16 +240,25 @@
                 <h3>CATÁLOGO DE SERVIÇOS 2025</h3>
             </div>
 
+            <!-- Nível 2 - 10 Categorias -->
             <div class="category-level container">
                 
                 <!-- 1. ADVERTISING -->
                 <div class="category-group">
                     <div class="node"><h4>Advertising</h4></div>
                     <div class="request-type-block">
-                        <div class="request-type-container" data-target="adv-issues" data-title="Advertising Issues" data-config='{"Cesta": "N1 Service", "Workflow": "ITS Workflow - Defaut Portal Technology v5", "WorkflowLink": "https://cleveradvertising.atlassian.net/jira/settings/issues/workflows/a2ce916a-1dce-405d-9fe1-14761df5373a"}' onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Advertising Issues</h5></div></div>
-                        <div class="request-type-container" data-target="adv-creatives" data-title="Creatives" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Creatives</h5></div></div>
-                        <div class="request-type-container" data-target="adv-hook" data-title="Hook" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Hook</h5></div></div>
-                        <div class="request-type-container" data-target="adv-traffic" data-title="Traffic Analysis" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Traffic Analysis</h5></div></div>
+                        <div class="request-type-container" data-target="advertising" data-title="Advertising" 
+                             data-config='{"Cesta": "N1 Service", "SLA_Matrix": [{"Type": "Incidente (Média)", "N1": "6h", "N2": "6h", "ESP": "6h", "N3": "40h"}, {"Type": "Problema (Alta)", "N1": "3h", "N2": "3h", "ESP": "3h", "N3": "40h"}, {"Type": "Planeada", "N1": "16h", "N2": "16h", "ESP": "16h", "N3": "40h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5", "WorkflowLink": "https://cleveradvertising.atlassian.net/jira/settings/issues/workflows/a2ce916a-1dce-405d-9fe1-14761df5373a", "Labels": "Bulk Change, Business Rules, User Error, Hook, Performance, Product Error"}' 
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Advertising</h5></div></div>
+                        <div class="request-type-container" data-target="adv-creatives" data-title="Creatives" 
+                             data-config='{"Cesta": "Thiago Araújo", "Interno": "Report errors or request changes in creatives", "Tipo": "Incident / Request", "Security Level": "ITS - Advertising", "SLA_Matrix": [{"Type": "Standard", "N1": "NA", "N2": "NA", "ESP": "4h", "N3": "6h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5", "WorkflowLink": "https://cleveradvertising.atlassian.net/jira/settings/issues/workflows/a2ce916a-1dce-405d-9fe1-14761df5373a", "Labels": "Creatives, Creatives - New, Creatives - Change/edit"}' 
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Creatives</h5></div></div>
+                        <div class="request-type-container" data-target="adv-hook" data-title="Hook" 
+                             data-config='{"Cesta": "N1 Service", "Security Level": "ITS - Advertising", "SLA_Matrix": [{"Type": "Prioridade Baixa", "N1": "NA", "N2": "NA", "ESP": "8h", "N3": "6h"}, {"Type": "Prioridade Alta", "N1": "NA", "N2": "NA", "ESP": "6h", "N3": "6h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5", "WorkflowLink": "https://cleveradvertising.atlassian.net/jira/settings/issues/workflows/a2ce916a-1dce-405d-9fe1-14761df5373a", "Labels": "Hook, Advertising"}' 
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Hook</h5></div></div>
+                        <div class="request-type-container" data-target="adv-traffic" data-title="Traffic Analysis" 
+                             data-config='{"Cesta": "N1 Service", "SLA_Matrix": [{"Type": "Incidente", "N1": "6h", "N2": "6h", "ESP": "6h", "N3": "40h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5", "Labels": "Traffic Analysis, Performance"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Traffic Analysis</h5></div></div>
                     </div>
                 </div>
 
@@ -272,7 +281,7 @@
                     <div class="node"><h4>Hardware</h4></div>
                     <div class="request-type-block">
                         <div class="request-type-container" data-target="hard-accessories" data-title="Accessories" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Accessories</h5></div></div>
-                        <div class="request-type-container" data-target="hard-notebook" data-title="Notebook" data-config='{"Área": "INFRA", "Cesta": "Marco Sousa e Jeferson Calvalcanti", "Workflow": "ITS Workflow - Defaut Portal Technology v5", "WorkflowLink": "https://cleveradvertising.atlassian.net/jira/settings/issues/workflows/a2ce916a-1dce-405d-9fe1-14761df5373a", "Labels": "Acessories / Notebook, Equipment Maintenance"}' onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Notebook</h5></div></div>
+                        <div class="request-type-container" data-target="hard-notebook" data-title="Notebook" data-config='{"Área": "INFRA", "Responsável": "Marco Sousa e Jeferson Calvalcanti", "Workflow": "ITS Workflow - Defaut Portal Technology v5"}' onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Notebook</h5></div></div>
                         <div class="request-type-container" data-target="hard-printer" data-title="Printer" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Printer</h5></div></div>
                     </div>
                 </div>
@@ -281,7 +290,7 @@
                 <div class="category-group">
                     <div class="node"><h4>Access</h4></div>
                     <div class="request-type-block">
-                        <div class="request-type-container" data-target="access-internal" data-title="Internal Application" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Internal Application</h5></div></div>
+                        <div class="request-type-container" data-target="access-internal" data-title="Internal Application" data-config='{"Cesta": "Maurício Andrade (Approvals, B2B, Bold, Comission) / Mário Pacheco (CleverADS, No Code)", "Interno": "Report access problems/difficulties; change permissions; or request new access.", "Security Level": "ITS - Infra Access", "SLA N1": "3h", "SLA N2": "3h", "SLA ESP": "40h", "Workflow": "ITS Workflow - Defaut Portal Technology v5", "Labels": "Access, Settings, User Error, Licence assignment + installation, Licence assignment, Installation, Access/Permissions - Provide, Access/Permissions - Remove, Access/Permissions - Change"}' onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Internal Application</h5></div></div>
                         <div class="request-type-container" data-target="access-external" data-title="External Application" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>External Application</h5></div></div>
                         <div class="request-type-container" data-target="access-email" data-title="Email" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Email</h5></div></div>
                     </div>
@@ -297,7 +306,7 @@
                     </div>
                 </div>
 
-                <!-- 6. DATA (New Options) -->
+                <!-- 6. DATA -->
                 <div class="category-group">
                     <div class="node"><h4>Data</h4></div>
                     <div class="request-type-block">
@@ -344,15 +353,15 @@
                         <div class="request-type-container" data-target="imp-process" data-title="Process /FAQ" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Process /FAQ</h5></div></div>
                     </div>
                 </div>
-
             </div>
         </section>
 
+        <!-- PANEL SECTION -->
         <section id="panel-container" class="container">
             <div id="form-detail-panel" class="visible">
                 <div id="form-detail-content">
                     <h2>Selecione uma categoria acima</h2>
-                    <p style="text-align: center; color: var(--color-mid-gray);">Explore a árvore para abrir o formulário.</p>
+                    <p style="text-align: center; color: var(--color-mid-gray);">Explore a árvore para abrir o formulário correspondente.</p>
                 </div>
                 <div id="form-feedback">Solicitação enviada com sucesso para o JSM!</div>
             </div>
@@ -366,16 +375,71 @@
         let lastClickedContainer = null;
 
         const formFieldTemplates = {
-            'adv-issues': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description</label><textarea rows="4"></textarea></div><div class="form-field-group"><label>Priority</label><select><option>Low</option><option>Medium</option><option>High</option></select></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
-            'adv-traffic': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description</label><textarea rows="4"></textarea></div><div class="form-field-group"><label>Platform</label><input type="text"></div><div class="form-field-group"><label>ScriptID</label><input type="text"></div><div class="form-field-group"><label>Implementation Method</label><input type="text"></div><div class="form-field-group"><label>Meeting Required?</label><select><option>Não</option><option>Sim</option></select></div><div class="form-field-group"><label>Priority</label><select><option>Low</option><option>Medium</option><option>High</option></select></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
-            
-            // DATA Group
-            'data-visualization': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Service Type*</label><select required><option value="">Select...</option><option>New Dashboard</option><option>Data Fix</option><option>Improvement</option></select></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required placeholder="Normal text"></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div><div class="form-field-group"><label>Priority</label><select><option>Low</option><option>Medium</option><option>High</option></select></div>`,
-            'data-engineering': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Service Type Data*</label><select required><option value="">Select...</option><option>Data Pipeline</option><option>Warehouse Fix</option><option>Integration</option></select></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required placeholder="Normal text"></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div><div class="form-field-group"><label>Priority</label><select><option>Low</option><option>Medium</option><option>High</option></select></div>`,
-            'data-automation': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Service Type RPA*</label><select required><option value="">Select...</option><option>New Automation</option><option>Bot Fix</option><option>Process Optimization</option></select></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required placeholder="Normal text"></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div><div class="form-field-group"><label>Priority</label><select><option>Low</option><option>Medium</option><option>High</option></select></div>`,
-            'data-costs': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Service Type Costs & Commissions*</label><select required><option value="">Select...</option><option>Commission Calculation Fix</option><option>Cost Discrepancy</option><option>New Report</option></select></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required placeholder="Normal text"></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div><div class="form-field-group"><label>Priority</label><select><option>Low</option><option>Medium</option><option>High</option></select></div>`,
-
-            // OUTSOURCING
+            'advertising': `
+                <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
+                <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Description*</label><textarea rows="4" required placeholder="Rich text / HTML..."></textarea></div>
+                <div class="form-field-checkbox"><label>Meeting required?</label><input type="checkbox"> <span>Yes</span></div>
+                <div class="form-field-group"><label>Platform*</label><select required><option value="">Select...</option><option>CleverADS</option><option>Script</option><option>Mobile</option><option>Other</option></select></div>
+                <div class="form-field-group"><label>ScriptID</label><input type="text"></div>
+                <div class="form-field-group"><label>Implementation Method</label><select><option value="">Select...</option><option>Automatic</option><option>Manual</option></select></div>
+                <div class="form-field-group"><label>Attachment</label><input type="file"></div>
+                <div class="form-field-group"><label>Priority</label><select><option value="Low" selected>Low</option><option value="Medium">Medium</option><option value="High">High</option></select></div>
+            `,
+            'adv-creatives': `
+                <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
+                <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Description*</label><textarea rows="4" required placeholder="Normal text"></textarea></div>
+                <div class="form-field-group"><label>Marca</label><select><option value="">Select...</option><option>Clever</option><option>Partner</option></select></div>
+                <div class="form-field-group"><label>Vertical</label><select><option value="">Select...</option><option>iGaming</option><option>Tech</option></select></div>
+                <div class="form-field-group"><label>Nome do criativo</label><input type="text"></div>
+                <div class="form-field-group"><label>Geo</label><select><option value="">Select...</option><option>WW</option><option>LATAM</option><option>BR</option></select></div>
+                <div class="form-field-group"><label>Forma de trakeamento</label><input type="text"></div>
+                <div class="form-field-group"><label>Attachment</label><input type="file"></div>
+                <div class="form-field-group"><label>Prioridade*</label><select required><option value="Low">Low</option><option value="Medium">Medium</option><option value="High">High</option></select></div>
+            `,
+            'adv-hook': `
+                <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
+                <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Description*</label><textarea rows="4" required placeholder="Normal text"></textarea></div>
+                <div class="form-field-group"><label>ScriptID</label><input type="text"></div>
+                <div class="form-field-group"><label>Priority</label><select><option value="Low" selected>Low</option><option value="High">High</option></select></div>
+                <div class="form-field-group"><label>Attachment</label><input type="file"></div>
+            `,
+            // ATUALIZADO: Traffic Analysis baseado na imagem de 16.06.18
+            'adv-traffic': `
+                <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
+                <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Description*</label><textarea rows="4" required placeholder="Normal text"></textarea></div>
+                <div class="form-field-checkbox"><label>Meeting required?</label><input type="checkbox"> <span>Yes</span></div>
+                <div class="form-field-group"><label>Anexar Prints de falha/configurações.</label><input type="file"></div>
+                <div class="form-field-group"><label>ScriptID*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Platform*</label><select required>
+                    <option value="">Select...</option>
+                    <option>CleverADS</option>
+                    <option>Script</option>
+                    <option>Mobile</option>
+                    <option>Other</option>
+                </select></div>
+                <div class="form-field-group"><label>Implementation Method</label><select>
+                    <option value="">Select...</option>
+                    <option>Automatic</option>
+                    <option>Manual</option>
+                </select></div>
+                <div class="form-field-group"><label>Priority</label><select>
+                    <option value="Low" selected>Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select></div>
+            `,
+            'access-internal': `
+                <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
+                <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Access Type*</label><select required>
+                    <option value="">Select...</option><option>Approvals</option><option>B2B</option><option>Bold</option><option>CleverADS</option><option>Commission</option><option>No Code Operations</option>
+                </select></div>
+                <div class="form-field-group"><label>Attachment</label><input type="file"></div>
+            `,
             'out-admission': `
                 <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
                 <div class="form-field-group"><label>Priority</label><select><option value="Low">Low</option><option value="Medium">Medium</option><option value="High">High</option></select></div>
@@ -384,33 +448,11 @@
                 <div class="form-field-group"><label>Function*</label><input type="text" required></div>
                 <div class="form-field-group"><label>Responsible*</label><input type="text" required></div>
                 <div class="form-field-group"><label>Team*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Hours > 20h/week?</label><select><option>Yes</option><option>No</option></select></div>
+                <div class="form-field-group"><label>Work > 20h/week?</label><select><option>Yes</option><option>No</option></select></div>
                 <div class="form-field-group"><label>Building*</label><select required><option>Main Office</option><option>Technical Room</option><option>Remote</option></select></div>
                 <div class="form-field-group"><label>Start date*</label><input type="date" required></div>
                 <div class="form-field-group"><label>Personal email*</label><input type="email" required></div>
-            `,
-            'out-resignation': `
-                <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Full Name*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Function*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Responsible*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Team*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Building*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Last day at Company*</label><input type="date" required></div>
-                <div class="form-field-group"><label>End of contract*</label><input type="date" required></div>
-            `,
-            'out-mobility': `
-                <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Priority</label><select><option value="Low">Low</option></select></div>
-                <div class="form-field-group"><label>Full Name*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Function*</label><input type="text" required></div>
-                <div class="form-field-group"><label>New function*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Responsible/Team Leader*</label><input type="text" required placeholder="Enter name or email..."></div>
-                <div class="form-field-group"><label>New Responsible/Team Leader*</label><input type="text" required placeholder="Enter name or email..."></div>
-                <div class="form-field-group"><label>Moving date*</label><input type="date" required></div>
-            `,
-            'hard-notebook': `<div class="form-field-group"><label>Summary</label><input type="text" required></div><div class="form-field-group"><label>Description</label><textarea rows="4"></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
-            'access-email': `<div class="form-field-group"><label>Summary</label><input type="text" required></div><div class="form-field-group"><label>Type Service</label><select><option>Create Email</option><option>Change Email</option><option>Create Group</option></select></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`
+            `
         };
 
         function showPanel(panelId, container) {
@@ -431,7 +473,7 @@
             if (!nav) {
                 nav = document.createElement('div'); nav.id = 'panel-nav-buttons'; nav.classList.add('panel-nav');
                 const btn1 = document.createElement('button'); btn1.innerText = 'FORMULÁRIO (USUÁRIO)'; btn1.onclick = () => showPanel('form-detail-panel');
-                const btn2 = document.createElement('button'); btn2.innerText = 'CONFIGURAÇÃO (ADMIN)'; btn2.onclick = () => showPanel('backoffice-panel');
+                const btn2 = document.createElement('button'); btn2.innerText = 'ADMIN (BACKOFFICE)'; btn2.onclick = () => showPanel('backoffice-panel');
                 document.getElementById('panel-container').prepend(nav); nav.appendChild(btn1); nav.appendChild(btn2);
             }
             nav.querySelectorAll('button').forEach(btn => btn.classList.remove('active'));
@@ -444,7 +486,7 @@
             const contentArea = document.getElementById('form-detail-content');
             const title = container.getAttribute('data-title');
             const template = formFieldTemplates[targetId] || `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description</label><textarea rows="4"></textarea></div>`;
-            contentArea.innerHTML = `<h2>${title}</h2><form id="jsm-form" onsubmit="handleFormSubmit(event)">${template}<div class="submit-area"><button type="submit">ENVIAR SOLICITAÇÃO</button></div></form>`;
+            contentArea.innerHTML = `<h2>${title}</h2><form onsubmit="handleFormSubmit(event)">${template}<div class="submit-area"><button type="submit">ENVIAR SOLICITAÇÃO</button></div></form>`;
         }
 
         function handleFormSubmit(e) {
@@ -458,21 +500,30 @@
             const backContent = document.getElementById('backoffice-content');
             const title = container.getAttribute('data-title');
             const configData = container.getAttribute('data-config');
-            if (!configData) { backContent.innerHTML = `<h2>${title}</h2><p>Metadados administrativos em atualização.</p>`; return; }
+            if (!configData) { backContent.innerHTML = `<h2>${title} - Admin</h2><p>Dados administrativos não configurados.</p>`; return; }
             const config = JSON.parse(configData);
             let html = `<h2>${title} - Admin</h2><div class="backoffice-grid"><div class="metadata-section"><h3>Configurações JSM</h3>`;
             for (let key in config) { 
-                if(key !== 'Labels' && key !== 'WorkflowLink') {
-                    if (key === 'Workflow' || config[key].includes('ITS Workflow')) {
+                if(key !== 'Labels' && key !== 'SLA_Matrix' && key !== 'WorkflowLink') {
+                    if (key === 'Workflow') {
                         html += `<div><strong>${key}:</strong> <a href="https://cleveradvertising.atlassian.net/jira/settings/issues/workflows/a2ce916a-1dce-405d-9fe1-14761df5373a" target="_blank" class="workflow-link">${config[key]}</a></div>`;
                     } else {
                         html += `<div><strong>${key}:</strong> ${config[key]}</div>`; 
                     }
                 }
             }
+            
+            if (config['SLA_Matrix']) {
+                html += `<h4>Matriz de SLA</h4><table class="matrix-table"><tr><th>Tipo</th><th>N1</th><th>N2</th><th>ESP</th><th>N3</th></tr>`;
+                config['SLA_Matrix'].forEach(row => {
+                    html += `<tr><td>${row.Type}</td><td>${row.N1}</td><td>${row.N2}</td><td>${row.ESP}</td><td>${row.N3}</td></tr>`;
+                });
+                html += `</table>`;
+            }
+
             html += `</div>`;
             if (config['Labels']) {
-                html += `<div class="metadata-section"><h3>Categorias de Fechamento</h3><div class="labels-box">${config['Labels'].split(',').map(l => `<span>${l.trim()}</span>`).join('')}</div></div>`;
+                html += `<div class="metadata-section"><h3>Tags / Categorias</h3><div class="labels-box">${config['Labels'].split(',').map(l => `<span>${l.trim()}</span>`).join('')}</div></div>`;
             }
             html += `</div>`; backContent.innerHTML = html;
         }
