@@ -49,6 +49,7 @@
             padding: 20px 0;
         }
 
+        /* Fixed Header */
         header {
             position: fixed;
             top: 0;
@@ -63,6 +64,7 @@
             padding: 10px 0;
         }
 
+        /* Hero */
         .hero {
             background-color: var(--color-header-bg);
             padding: 30px 0 10px 0;
@@ -70,6 +72,7 @@
             border-bottom: 4px solid var(--color-accent);
         }
 
+        /* Service Tree Styling */
         .service-tree {
             display: flex;
             flex-direction: column;
@@ -122,6 +125,7 @@
             background-color: var(--color-header-text); transform: translateX(-50%); z-index: 1;
         }
 
+        /* Sub-nodes / Request Types */
         .request-type-block { padding-top: 15px; width: 100%; }
         .request-type-container {
             border: 1px solid var(--color-light-gray);
@@ -146,6 +150,7 @@
             font-size: 0.6rem; line-height: 1.1; min-height: 20px; font-weight: 500;
         }
 
+        /* Detail Panels */
         #panel-container { margin-top: 50px; }
         #form-detail-panel, #backoffice-panel {
             min-height: 300px; padding: 40px; background-color: var(--color-header-bg);
@@ -165,6 +170,7 @@
         }
         .panel-nav button.active { color: var(--color-header-text); border-bottom-color: var(--color-accent); }
 
+        /* Forms */
         #form-detail-content h2 { margin-bottom: 20px; font-size: 1.5rem; color: var(--color-header-text); }
         #form-detail-content form { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding-bottom: 20px; }
         .form-field-group { display: flex; flex-direction: column; gap: 5px; }
@@ -183,6 +189,7 @@
 
         #form-feedback { display: none; padding: 20px; text-align: center; background: #d4edda; color: #155724; border-radius: 6px; margin-top: 20px; font-weight: 600; }
 
+        /* Backoffice */
         .backoffice-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
         .metadata-section { padding: 15px; background: #fdfdfd; border: 1px solid #eee; border-radius: 4px; }
         .metadata-section h3 { font-size: 0.9rem; color: var(--color-accent); margin-bottom: 10px; border-bottom: 1px solid #eee; }
@@ -243,7 +250,6 @@
             <!-- Nível 2 - 10 Categorias -->
             <div class="category-level container">
                 
-                <!-- 1. ADVERTISING -->
                 <div class="category-group">
                     <div class="node"><h4>Advertising</h4></div>
                     <div class="request-type-block">
@@ -262,17 +268,18 @@
                     </div>
                 </div>
 
-                <!-- 2. SOFTWARES -->
+                <!-- 2. SOFTWARES - ATUALIZADO -->
                 <div class="category-group">
                     <div class="node"><h4>Softwares</h4></div>
                     <div class="request-type-block">
                         <div class="request-type-container" data-target="soft-bold" data-title="Bold" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Bold</h5></div></div>
                         <div class="request-type-container" data-target="soft-cleverads" data-title="CleverADS" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>CleverADS</h5></div></div>
                         <div class="request-type-container" data-target="soft-c2p" data-title="C2P" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>C2P</h5></div></div>
-                        <div class="request-type-container" data-target="soft-comission" data-title="Comission" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Comission</h5></div></div>
+                        <!-- REMOVIDO: Comission -->
                         <div class="request-type-container" data-target="soft-approvals" data-title="Approvals" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Approvals</h5></div></div>
                         <div class="request-type-container" data-target="soft-b2b" data-title="B2B" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>B2B</h5></div></div>
-                        <div class="request-type-container" data-target="soft-issues" data-title="Issues Softwares" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Issues Softwares</h5></div></div>
+                        <!-- RENOMEADO: External Softwares -->
+                        <div class="request-type-container" data-target="soft-external" data-title="External Softwares" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>External Softwares</h5></div></div>
                     </div>
                 </div>
 
@@ -281,7 +288,7 @@
                     <div class="node"><h4>Hardware</h4></div>
                     <div class="request-type-block">
                         <div class="request-type-container" data-target="hard-accessories" data-title="Accessories" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Accessories</h5></div></div>
-                        <div class="request-type-container" data-target="hard-notebook" data-title="Notebook" data-config='{"Área": "INFRA", "Responsável": "Marco Sousa e Jeferson Calvalcanti", "Workflow": "ITS Workflow - Defaut Portal Technology v5"}' onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Notebook</h5></div></div>
+                        <div class="request-type-container" data-target="hard-notebook" data-title="Notebook" data-config='{"Área": "INFRA", "Responsável": "Marco Sousa e Jeferson Calvalcanti", "Workflow": "ITS Workflow - Defaut Portal Technology v5", "WorkflowLink": "https://cleveradvertising.atlassian.net/jira/settings/issues/workflows/a2ce916a-1dce-405d-9fe1-14761df5373a", "Labels": "Acessories / Notebook, Swap Equipment, Equipment Maintenance"}' onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Notebook</h5></div></div>
                         <div class="request-type-container" data-target="hard-printer" data-title="Printer" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Printer</h5></div></div>
                     </div>
                 </div>
@@ -406,7 +413,6 @@
                 <div class="form-field-group"><label>Priority</label><select><option value="Low" selected>Low</option><option value="High">High</option></select></div>
                 <div class="form-field-group"><label>Attachment</label><input type="file"></div>
             `,
-            // ATUALIZADO: Traffic Analysis baseado na imagem de 16.06.18
             'adv-traffic': `
                 <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
                 <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
@@ -440,6 +446,47 @@
                 </select></div>
                 <div class="form-field-group"><label>Attachment</label><input type="file"></div>
             `,
+            // RESTAURADOS: SOFTWARES Group
+            'soft-bold': `
+                <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
+                <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Description*</label><textarea rows="4" required placeholder="Describe the issue or request for Bold"></textarea></div>
+                <div class="form-field-group"><label>Attachment</label><input type="file"></div>
+                <div class="form-field-group"><label>Priority</label><select><option value="Low">Low</option><option value="Medium">Medium</option><option value="High">High</option></select></div>
+            `,
+            'soft-cleverads': `
+                <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
+                <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Description*</label><textarea rows="4" required placeholder="Describe the issue or request for CleverADS"></textarea></div>
+                <div class="form-field-group"><label>Attachment</label><input type="file"></div>
+                <div class="form-field-group"><label>Priority</label><select><option value="Low">Low</option><option value="Medium">Medium</option><option value="High">High</option></select></div>
+            `,
+            'soft-c2p': `
+                <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
+                <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Description*</label><textarea rows="4" required placeholder="Describe the issue or request for C2P"></textarea></div>
+                <div class="form-field-group"><label>Attachment</label><input type="file"></div>
+            `,
+            'soft-approvals': `
+                <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
+                <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Description*</label><textarea rows="4" required placeholder="Describe the issue or request for Approvals"></textarea></div>
+                <div class="form-field-group"><label>Attachment</label><input type="file"></div>
+            `,
+            'soft-b2b': `
+                <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
+                <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Description*</label><textarea rows="4" required placeholder="Describe the issue or request for B2B"></textarea></div>
+                <div class="form-field-group"><label>Attachment</label><input type="file"></div>
+            `,
+            'soft-external': `
+                <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
+                <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Software Type*</label><input type="text" required placeholder="Which external software is having issues?"></div>
+                <div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div>
+                <div class="form-field-group"><label>Attachment</label><input type="file"></div>
+            `,
+            // ... (restantes permanecem iguais)
             'out-admission': `
                 <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
                 <div class="form-field-group"><label>Priority</label><select><option value="Low">Low</option><option value="Medium">Medium</option><option value="High">High</option></select></div>
@@ -452,7 +499,9 @@
                 <div class="form-field-group"><label>Building*</label><select required><option>Main Office</option><option>Technical Room</option><option>Remote</option></select></div>
                 <div class="form-field-group"><label>Start date*</label><input type="date" required></div>
                 <div class="form-field-group"><label>Personal email*</label><input type="email" required></div>
-            `
+            `,
+            'data-visualization': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Service Type*</label><select required><option value="">Select...</option><option>New Dashboard</option><option>Improvement</option><option>Data Bug</option></select></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div><div class="form-field-group"><label>Priority</label><select><option>Low</option><option>Medium</option><option>High</option></select></div>`,
+            'hard-notebook': `<div class="form-field-group"><label>Summary</label><input type="text" required></div><div class="form-field-group"><label>Description</label><textarea rows="4" name="desc"></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`
         };
 
         function showPanel(panelId, container) {
