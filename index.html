@@ -240,7 +240,6 @@
             </div>
 
             <div class="category-level container">
-                
                 <!-- 1. ADVERTISING -->
                 <div class="category-group">
                     <div class="node"><h4>Advertising</h4></div>
@@ -338,15 +337,12 @@
                         <div class="request-type-container" data-target="data-visualization" data-title="Data Visualization" 
                              data-config='{"Cesta": "N1 Service", "Security Level": "ITS - Data Power BI", "SLA_Matrix": [{"Type": "Request", "N1": "3h", "N2": "3h", "ESP": "4h", "N3": "6h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
                              onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Data Visualization</h5></div></div>
-                        
                         <div class="request-type-container" data-target="data-engineering" data-title="Data Engineering" 
                              data-config='{"Cesta": "N2 Data", "Security Level": "ITS - Data Power BI", "SLA_Matrix": [{"Type": "Eng", "N1": "NA", "N2": "3h", "ESP": "4h", "N3": "6h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
                              onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Data Engineering</h5></div></div>
-                        
                         <div class="request-type-container" data-target="data-automation" data-title="Automation & Intelligence" 
                              data-config='{"Cesta": "N2 Data", "Security Level": "ITS - Data Power BI", "SLA_Matrix": [{"Type": "Auto", "N1": "NA", "N2": "3h", "ESP": "4h", "N3": "6h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
                              onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Automation & Intelligence</h5></div></div>
-                        
                         <div class="request-type-container" data-target="data-costs" data-title="Costs & Commissions" 
                              data-config='{"Cesta": "N2 Data", "Security Level": "ITS - Data Power BI", "SLA_Matrix": [{"Type": "Costs", "N1": "NA", "N2": "3h", "ESP": "4h", "N3": "6h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
                              onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Costs & Commissions</h5></div></div>
@@ -435,7 +431,7 @@
             'advertising': `
                 <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
                 <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div>
+                <div class="form-field-group"><label>Description*</label><textarea rows="4" required placeholder="Rich text..."></textarea></div>
                 <div class="form-field-checkbox"><label>Meeting required?</label><input type="checkbox"> <span>Yes</span></div>
                 <div class="form-field-group"><label>Platform*</label><select required><option value="">Select...</option><option>CleverADS</option><option>Script</option><option>Mobile</option><option>Other</option></select></div>
                 <div class="form-field-group"><label>ScriptID</label><input type="text"></div>
@@ -478,22 +474,62 @@
                 <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
                 <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
                 <div class="form-field-group"><label>Access Type*</label><select required>
-                    <option value="">Select...</option><option>Aplicações Adobe</option><option>AWS</option><option>Canva</option><option>Checkpoint</option><option>CleverADS</option><option>Cloudflare</option><option>Confluence</option><option>Cyberghost</option><option>Docker</option><option>Express VPN</option><option>Figma</option><option>Fortinet</option><option>Gamma</option><option>Github</option><option>Google</option><option>Grafana</option><option>Grammarly</option><option>HMA</option><option>JIRA</option><option>Keeper</option><option>Kibana</option><option>Microsoft EntraID</option><option>Miro</option><option>MS Office</option><option>NoCode</option><option>Slack</option><option>Vault</option><option>VPN</option><option>Zoho</option>
+                    <option value="">Select...</option><option>Aplicações Adobe</option><option>AWS</option><option>Canva</option><option>Checkpoint</option><option>CleverADS</option><option>Cloudflare</option><option>Confluence</option><option>Cyberghost</option><option>Docker</option><option>Express VPN</option><option>Figma</option><option>Fortinet</option><option>Gamma</option><option>Gemini - AI</option><option>Github</option><option>Google</option><option>Grafana</option><option>Grammarly</option><option>HMA</option><option>JIRA</option><option>Keeper</option><option>Kibana</option><option>Microsoft EntraID</option><option>Miro</option><option>MS Pacote Office</option><option>NoCode</option><option>PIA</option><option>Power BI</option><option>PureDome</option><option>S3</option><option>SimilarWeb</option><option>Slack</option><option>SOLDO Cards</option><option>Team Tailor</option><option>Teams</option><option>Vault</option><option>VPN</option><option>Zoho</option>
                 </select></div>
                 <div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div>
                 <div class="form-field-group"><label>Attachment</label><input type="file"></div>
             `,
             'access-internal': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Access Type*</label><select required><option value="">Select...</option><option>Approvals</option><option>B2B</option><option>Bold</option><option>CleverADS</option><option>Commission</option><option>No Code Operations</option></select></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
             'access-email': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description</label><textarea rows="4"></textarea></div>`,
-            'soft-bold': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
+            'soft-bold': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div><div class="form-field-group"><label>Priority</label><select><option value="Low">Low</option><option value="Medium">Medium</option><option value="High">High</option></select></div>`,
             'soft-cleverads': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
             'soft-c2p': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
             'soft-approvals': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
             'soft-b2b': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
             'soft-external': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Software Type*</label><select required><option value="Outros">Outros</option><option value="Core">Core</option><option value="AWS">AWS</option><option value="S3">S3</option><option value="Kibana">Kibana</option><option value="Advertising">Advertising</option></select></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
-            'out-admission': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Full Name*</label><input type="text" required></div><div class="form-field-group"><label>Start date*</label><input type="date" required></div>`,
-            'out-resignation': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Full Name*</label><input type="text" required></div><div class="form-field-group"><label>Last day*</label><input type="date" required></div>`,
-            'out-mobility': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>New function*</label><input type="text" required></div><div class="form-field-group"><label>Moving date*</label><input type="date" required></div>`,
+            
+            // --- OUTSOURCING IT Group (Updated from images) ---
+            'out-admission': `
+                <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
+                <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Priority</label><select><option value="Low">Low</option><option value="Medium">Medium</option><option value="High">High</option></select></div>
+                <div class="form-field-group"><label>Society/Company*</label><select required><option value="">Select...</option><option>Clever</option><option>Corporate</option><option>Partner</option></select></div>
+                <div class="form-field-group"><label>Full Name*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Function*</label><select required><option value="">Select...</option><option>Developer</option><option>Manager</option><option>Analyst</option><option>Other</option></select></div>
+                <div class="form-field-group"><label>If other:</label><input type="text" placeholder="Please specify if other function"></div>
+                <div class="form-field-group"><label>Responsible*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Team*</label><select required><option value="">Select...</option><option>Infra</option><option>Dev</option><option>Sales</option><option>Data</option></select></div>
+                <div class="form-field-group"><label>Does the collaborator work more than 20 hours per week?*</label><select required><option value="">Select...</option><option>Yes</option><option>No</option></select></div>
+                <div class="form-field-group"><label>Building*</label><select required><option value="">Select...</option><option>Headquarters</option><option>Remote</option><option>Satellite Office</option></select></div>
+                <div class="form-field-group"><label>Start date*</label><input type="date" required></div>
+                <div class="form-field-group"><label>Personal email*</label><input type="email" required></div>
+            `,
+            'out-resignation': `
+                <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
+                <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Prioridade</label><select><option value="Low">Low</option><option value="Medium">Medium</option><option value="High">High</option></select></div>
+                <div class="form-field-group"><label>Full Name*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Function*</label><select required><option value="">Select...</option><option>Developer</option><option>Manager</option><option>Analyst</option><option>Other</option></select></div>
+                <div class="form-field-group"><label>Responsible*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Team*</label><select required><option value="">Select...</option><option>Infra</option><option>Dev</option><option>Sales</option><option>Data</option></select></div>
+                <div class="form-field-group"><label>Building*</label><select required><option value="">Select...</option><option>Headquarters</option><option>Remote</option></select></div>
+                <div class="form-field-group"><label>Last day at the Company*</label><input type="date" required></div>
+                <div class="form-field-group"><label>End of contract*</label><input type="date" required></div>
+            `,
+            'out-mobility': `
+                <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
+                <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Prioridade</label><select><option value="Low">Low</option><option value="Medium">Medium</option><option value="High">High</option></select></div>
+                <div class="form-field-group"><label>Full Name*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Function</label><select><option value="">Select current...</option><option>Dev</option><option>Analyst</option></select></div>
+                <div class="form-field-group"><label>New function</label><select><option value="">Select new...</option><option>Senior Dev</option><option>Manager</option></select></div>
+                <div class="form-field-group"><label>Responsible/Team Leader*</label><select required><option value="">Enter name or email...</option></select></div>
+                <div class="form-field-group"><label>New Responsible/Team Leader*</label><select required><option value="">Enter name or email...</option></select></div>
+                <div class="form-field-group"><label>Team</label><select><option value="">Select current...</option></select></div>
+                <div class="form-field-group"><label>New team</label><select><option value="">Select new...</option></select></div>
+                <div class="form-field-group"><label>Moving date*</label><input type="date" required></div>
+            `,
+            
             'data-visualization': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
             'sec-phishing': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Priority</label><select><option value="Low">Low</option><option value="Medium">Medium</option><option value="High">High</option></select></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
             'sec-incident': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Priority</label><select><option value="Low">Low</option><option value="High">High</option></select></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
@@ -519,9 +555,9 @@
             `,
             'imp-suggest': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Suggestion*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
             'imp-process': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Request*</label><textarea rows="4" required></textarea></div>`,
-            'hard-accessories': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description</label><textarea rows="4"></textarea></div>`,
-            'hard-notebook': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description</label><textarea rows="4"></textarea></div>`,
-            'hard-printer': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description</label><textarea rows="4"></textarea></div>`,
+            'hard-accessories': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description</label><textarea rows="4"></textarea></div>`,
+            'hard-notebook': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description</label><textarea rows="4"></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
+            'hard-printer': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description</label><textarea rows="4"></textarea></div>`,
             'net-wifi': `
                 <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
                 <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
@@ -587,7 +623,7 @@
             const config = JSON.parse(configData);
             let html = `<h2>${title} - Admin</h2><div class="backoffice-grid"><div class="metadata-section"><h3>Configurações JSM</h3>`;
             for (let key in config) { 
-                if(key !== 'Labels' && key !== 'SLA_Matrix' && key !== 'WorkflowLink') {
+                if(key !== 'Labels' && key !== 'SLA_Matrix' && key !== 'WorkflowLink' && key !== 'Contexto' && key !== 'Tipo' && key !== 'Instrucoes') {
                     if (key === 'Workflow') {
                         const link = config['WorkflowLink'] || "https://cleveradvertising.atlassian.net/jira/settings/issues/workflows/a2ce916a-1dce-405d-9fe1-14761df5373a";
                         html += `<div><strong>${key}:</strong> <a href="${link}" target="_blank" class="workflow-link">${config[key]}</a></div>`;
