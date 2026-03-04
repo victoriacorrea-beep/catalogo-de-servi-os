@@ -207,7 +207,6 @@
 <body>
 
     <header>
-        <!-- Logo Clever (C-L-E-V-E-R com um único L e V central) -->
         <svg id="Logo_Clever" style="height: 70px; width: auto;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 837.7 245.66">
             <defs>
                 <style>.cls-logo-1{fill:#24282a;}.cls-logo-2{fill:url(#grad_logo);}</style>
@@ -237,25 +236,26 @@
 
         <section class="service-tree">
             <div class="node root-node">
-                <h3>CATÁLOGO DE SERVIÇOS 2025</h3>
+                <h3>CATÁLOGO DE SERVIÇOS 2026</h3>
             </div>
 
             <div class="category-level container">
+                
                 <!-- 1. ADVERTISING -->
                 <div class="category-group">
                     <div class="node"><h4>Advertising</h4></div>
                     <div class="request-type-block">
                         <div class="request-type-container" data-target="advertising" data-title="Advertising" 
-                             data-config='{"Cesta": "N1 Service", "SLA_Matrix": [{"Type": "Incidente (Média)", "N1": "6h", "N2": "6h", "ESP": "6h", "N3": "40h"}, {"Type": "Problema (Alta)", "N1": "3h", "N2": "3h", "ESP": "3h", "N3": "40h"}, {"Type": "Planeada", "N1": "16h", "N2": "16h", "ESP": "16h", "N3": "40h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5", "Labels": "Bulk Change, Business Rules, User Error, Hook, Performance, Product Error"}' 
+                             data-config='{"Cesta": "N1 Service", "SLA_Matrix": [{"Type": "Incidente (Média)", "N1": "6h", "N2": "6h", "ESP": "6h", "N3": "40h"}, {"Type": "Problema (Alta)", "N1": "3h", "N2": "3h", "ESP": "3h", "N3": "40h"}, {"Type": "Planeada", "N1": "16h", "N2": "16h", "ESP": "16h", "N3": "40h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}' 
                              onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Advertising</h5></div></div>
                         <div class="request-type-container" data-target="adv-creatives" data-title="Creatives" 
-                             data-config='{"Cesta": "Thiago Araújo", "Security Level": "ITS - Advertising", "SLA_Matrix": [{"Type": "Standard", "N1": "NA", "N2": "NA", "ESP": "4h", "N3": "6h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5", "Labels": "Creatives, Creatives - New, Creatives - Change/edit"}' 
+                             data-config='{"Cesta": "Thiago Araújo", "Security Level": "ITS - Advertising", "SLA_Matrix": [{"Type": "Standard", "N1": "NA", "N2": "NA", "ESP": "4h", "N3": "6h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}' 
                              onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Creatives</h5></div></div>
                         <div class="request-type-container" data-target="adv-hook" data-title="Hook" 
-                             data-config='{"Cesta": "N1 Service", "Security Level": "ITS - Advertising", "SLA_Matrix": [{"Type": "Prioridade Baixa", "N1": "NA", "N2": "NA", "ESP": "8h", "N3": "6h"}, {"Type": "Prioridade Alta", "N1": "NA", "N2": "NA", "ESP": "6h", "N3": "6h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5", "Labels": "Hook, Advertising"}' 
+                             data-config='{"Cesta": "N1 Service", "Security Level": "ITS - Advertising", "SLA_Matrix": [{"Type": "Baixa", "N1": "NA", "N2": "NA", "ESP": "8h", "N3": "6h"}, {"Type": "Alta", "N1": "NA", "N2": "NA", "ESP": "6h", "N3": "6h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}' 
                              onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Hook</h5></div></div>
                         <div class="request-type-container" data-target="adv-traffic" data-title="Traffic Analysis" 
-                             data-config='{"Cesta": "N1 Service", "SLA_Matrix": [{"Type": "Incidente", "N1": "6h", "N2": "6h", "ESP": "6h", "N3": "40h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5", "Labels": "Traffic Analysis, Performance"}'
+                             data-config='{"Cesta": "N1 Service", "SLA_Matrix": [{"Type": "Incidente", "N1": "6h", "N2": "6h", "ESP": "6h", "N3": "40h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
                              onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Traffic Analysis</h5></div></div>
                     </div>
                 </div>
@@ -264,14 +264,21 @@
                 <div class="category-group">
                     <div class="node"><h4>Softwares</h4></div>
                     <div class="request-type-block">
-                        <div class="request-type-container" data-target="soft-bold" data-title="Bold" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Bold</h5></div></div>
-                        <div class="request-type-container" data-target="soft-cleverads" data-title="CleverADS" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>CleverADS</h5></div></div>
-                        <div class="request-type-container" data-target="soft-c2p" data-title="C2P" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>C2P</h5></div></div>
+                        <div class="request-type-container" data-target="soft-bold" data-title="Bold" 
+                             data-config='{"Cesta": "N1 Service", "Security Level": "ITS - Advertising", "SLA_Matrix": [{"Type": "Issue", "N1": "3h", "N2": "3h", "ESP": "4h", "N3": "6h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Bold</h5></div></div>
+                        <div class="request-type-container" data-target="soft-cleverads" data-title="CleverADS" 
+                             data-config='{"Cesta": "N1 Service", "Security Level": "ITS - Advertising", "SLA_Matrix": [{"Type": "Issue", "N1": "3h", "N2": "3h", "ESP": "4h", "N3": "6h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>CleverADS</h5></div></div>
+                        <div class="request-type-container" data-target="soft-c2p" data-title="C2P" 
+                             data-config='{"Cesta": "N1 Service", "Security Level": "ITS - Advertising", "SLA_Matrix": [{"Type": "Issue", "N1": "3h", "N2": "3h", "ESP": "4h", "N3": "6h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>C2P</h5></div></div>
                         <div class="request-type-container" data-target="soft-approvals" data-title="Approvals" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Approvals</h5></div></div>
-                        <div class="request-type-container" data-target="soft-b2b" data-title="B2B" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>B2B</h5></div></div>
-                        <!-- ATUALIZAÇÃO FINAL: EXTERNAL SOFTWARES COM REGRAS SOLICITADAS -->
+                        <div class="request-type-container" data-target="soft-b2b" data-title="B2B" 
+                             data-config='{"Cesta": "José Amorim", "Security Level": "ITS - Advertising", "SLA_Matrix": [{"Type": "Issue", "N1": "3h", "N2": "3h", "ESP": "4h", "N3": "6h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>B2B</h5></div></div>
                         <div class="request-type-container" data-target="soft-external" data-title="External Softwares" 
-                             data-config='{"Cesta": "Kleber Faustino (Core, AWS, S3, Kibana) / Gabriel Escabora (Advertising) / N1 Infra (Outros)", "Security Level": "ITS - Infra Access", "SLA_Matrix": [{"Type": "Software Request", "N1": "3h", "N2": "3h", "ESP": "NA", "N3": "40h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             data-config='{"Cesta": "Kleber Faustino / Gabriel Escabora / N1 Infra", "SLA_Matrix": [{"Type": "Request", "N1": "3h", "N2": "3h", "ESP": "NA", "N3": "40h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
                              onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>External Softwares</h5></div></div>
                     </div>
                 </div>
@@ -280,9 +287,15 @@
                 <div class="category-group">
                     <div class="node"><h4>Hardware</h4></div>
                     <div class="request-type-block">
-                        <div class="request-type-container" data-target="hard-accessories" data-title="Accessories" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Accessories</h5></div></div>
-                        <div class="request-type-container" data-target="hard-notebook" data-title="Notebook" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Notebook</h5></div></div>
-                        <div class="request-type-container" data-target="hard-printer" data-title="Printer" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Printer</h5></div></div>
+                        <div class="request-type-container" data-target="hard-accessories" data-title="Accessories" 
+                             data-config='{"Cesta": "Marco Sousa e Jeferson Calvalcanti", "Security Level": "ITS - Infra", "SLA_Matrix": [{"Type": "Equip", "N1": "4h", "N2": "3h", "ESP": "NA", "N3": "40h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Accessories</h5></div></div>
+                        <div class="request-type-container" data-target="hard-notebook" data-title="Notebook" 
+                             data-config='{"Cesta": "Marco Sousa e Jeferson Calvalcanti", "Security Level": "ITS - Infra", "SLA_Matrix": [{"Type": "Equip", "N1": "4h", "N2": "3h", "ESP": "NA", "N3": "40h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Notebook</h5></div></div>
+                        <div class="request-type-container" data-target="hard-printer" data-title="Printer" 
+                             data-config='{"Cesta": "Marco Sousa e Jeferson Calvalcanti", "Security Level": "ITS - Infra", "SLA_Matrix": [{"Type": "Infra", "N1": "3h", "N2": "3h", "ESP": "NA", "N3": "40h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Printer</h5></div></div>
                     </div>
                 </div>
 
@@ -291,9 +304,14 @@
                     <div class="node"><h4>Access</h4></div>
                     <div class="request-type-block">
                         <div class="request-type-container" data-target="access-internal" data-title="Internal Application" 
-                             data-config='{"Cesta": "Maurício Andrade (Approvals, B2B, Bold, Comission) / Mário Pacheco (CleverADS, NoCode)", "Security Level": "ITS - Infra Access", "SLA_Matrix": [{"Type": "Access Request", "N1": "3h", "N2": "3h", "ESP": "NA", "N3": "40h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5", "Labels": "Access, Permissions"}' onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Internal Application</h5></div></div>
-                        <div class="request-type-container" data-target="access-external" data-title="External Application" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>External Application</h5></div></div>
-                        <div class="request-type-container" data-target="access-email" data-title="Email" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Email</h5></div></div>
+                             data-config='{"Cesta": "Maurício Andrade / Mário Pacheco", "Security Level": "ITS - Infra Access", "SLA_Matrix": [{"Type": "Access", "N1": "3h", "N2": "3h", "ESP": "NA", "N3": "40h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}' 
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Internal Application</h5></div></div>
+                        <div class="request-type-container" data-target="access-external" data-title="External Application" 
+                             data-config='{"Cesta": "Kleber Faustino / Gabriel Escabora / N1 Infra", "Security Level": "ITS - Infra Access", "SLA_Matrix": [{"Type": "Access", "N1": "3h", "N2": "3h", "ESP": "NA", "N3": "40h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>External Application</h5></div></div>
+                        <div class="request-type-container" data-target="access-email" data-title="Email" 
+                             data-config='{"Cesta": "Fernanda Ramos", "Security Level": "ITS - Infra Access", "SLA_Matrix": [{"Type": "Access", "N1": "3h", "N2": "3h", "ESP": "NA", "N3": "40h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Email</h5></div></div>
                     </div>
                 </div>
 
@@ -301,9 +319,15 @@
                 <div class="category-group">
                     <div class="node"><h4>Outsourcing</h4></div>
                     <div class="request-type-block">
-                        <div class="request-type-container" data-target="out-admission" data-title="Admission" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Admission</h5></div></div>
-                        <div class="request-type-container" data-target="out-resignation" data-title="Resignation" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Resignation</h5></div></div>
-                        <div class="request-type-container" data-target="out-mobility" data-title="Internal Mobility" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Internal Mobility</h5></div></div>
+                        <div class="request-type-container" data-target="out-admission" data-title="Admission" 
+                             data-config='{"Cesta": "Fernanda Ramos e Mário Pacheco", "Security Level": "ITS - Infra Access", "SLA_Matrix": [{"Type": "Admission", "N1": "18h", "N2": "NA", "ESP": "NA", "N3": "NA"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Admission</h5></div></div>
+                        <div class="request-type-container" data-target="out-resignation" data-title="Resignation" 
+                             data-config='{"Cesta": "Fernanda Ramos e Mário Pacheco", "Security Level": "ITS - Infra Access", "SLA_Matrix": [{"Type": "Resignation", "N1": "18h", "N2": "NA", "ESP": "NA", "N3": "NA"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Resignation</h5></div></div>
+                        <div class="request-type-container" data-target="out-mobility" data-title="Internal Mobility" 
+                             data-config='{"Cesta": "Fernanda Ramos e Mário Pacheco", "Security Level": "ITS - Infra Access", "SLA_Matrix": [{"Type": "Transfer", "N1": "40h", "N2": "NA", "ESP": "NA", "N3": "NA"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Internal Mobility</h5></div></div>
                     </div>
                 </div>
 
@@ -311,10 +335,21 @@
                 <div class="category-group">
                     <div class="node"><h4>Data</h4></div>
                     <div class="request-type-block">
-                        <div class="request-type-container" data-target="data-visualization" data-title="Data Visualization" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Data Visualization</h5></div></div>
-                        <div class="request-type-container" data-target="data-engineering" data-title="Data Engineering" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Data Engineering</h5></div></div>
-                        <div class="request-type-container" data-target="data-automation" data-title="Automation & Intelligence" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Automation & Intelligence</h5></div></div>
-                        <div class="request-type-container" data-target="data-costs" data-title="Costs & Commissions" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Costs & Commissions</h5></div></div>
+                        <div class="request-type-container" data-target="data-visualization" data-title="Data Visualization" 
+                             data-config='{"Cesta": "N1 Service", "Security Level": "ITS - Data Power BI", "SLA_Matrix": [{"Type": "Request", "N1": "3h", "N2": "3h", "ESP": "4h", "N3": "6h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Data Visualization</h5></div></div>
+                        
+                        <div class="request-type-container" data-target="data-engineering" data-title="Data Engineering" 
+                             data-config='{"Cesta": "N2 Data", "Security Level": "ITS - Data Power BI", "SLA_Matrix": [{"Type": "Eng", "N1": "NA", "N2": "3h", "ESP": "4h", "N3": "6h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Data Engineering</h5></div></div>
+                        
+                        <div class="request-type-container" data-target="data-automation" data-title="Automation & Intelligence" 
+                             data-config='{"Cesta": "N2 Data", "Security Level": "ITS - Data Power BI", "SLA_Matrix": [{"Type": "Auto", "N1": "NA", "N2": "3h", "ESP": "4h", "N3": "6h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Automation & Intelligence</h5></div></div>
+                        
+                        <div class="request-type-container" data-target="data-costs" data-title="Costs & Commissions" 
+                             data-config='{"Cesta": "N2 Data", "Security Level": "ITS - Data Power BI", "SLA_Matrix": [{"Type": "Costs", "N1": "NA", "N2": "3h", "ESP": "4h", "N3": "6h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Costs & Commissions</h5></div></div>
                     </div>
                 </div>
 
@@ -322,8 +357,12 @@
                 <div class="category-group">
                     <div class="node"><h4>Network</h4></div>
                     <div class="request-type-block">
-                        <div class="request-type-container" data-target="net-wifi" data-title="Network/Wifi" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Network/Wifi</h5></div></div>
-                        <div class="request-type-container" data-target="net-antivirus" data-title="Antivirus" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Antivirus</h5></div></div>
+                        <div class="request-type-container" data-target="net-wifi" data-title="Network/Wifi" 
+                             data-config='{"Cesta": "David Martins", "Security Level": "ITS - infra", "SLA_Matrix": [{"Type": "Incident", "N1": "3h", "N2": "6h", "ESP": "NA", "N3": "15h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Network/Wifi</h5></div></div>
+                        <div class="request-type-container" data-target="net-antivirus" data-title="Antivirus" 
+                             data-config='{"Cesta": "Hugo Martins", "Security Level": "ITS - infra", "SLA_Matrix": [{"Type": "Software", "N1": "3h", "N2": "3h", "ESP": "NA", "N3": "40h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Antivirus</h5></div></div>
                     </div>
                 </div>
 
@@ -350,8 +389,12 @@
                 <div class="category-group">
                     <div class="node"><h4>Website</h4></div>
                     <div class="request-type-block">
-                        <div class="request-type-container" data-target="web-site" data-title="Site" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Site</h5></div></div>
-                        <div class="request-type-container" data-target="web-domain" data-title="Domain" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Domain</h5></div></div>
+                        <div class="request-type-container" data-target="web-site" data-title="Site" 
+                             data-config='{"Cesta": "Caio Barreira", "Security Level": "ITS - Infra", "SLA_Matrix": [{"Type": "Update", "N1": "3h", "N2": "NA", "ESP": "NA", "N3": "40h"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Site</h5></div></div>
+                        <div class="request-type-container" data-target="web-domain" data-title="Domain" 
+                             data-config='{"Cesta": "Hugo Martins", "Security Level": "ITS - Infra", "SLA_Matrix": [{"Type": "Domain", "N1": "3h", "N2": "6h", "ESP": "NA", "N3": "NA"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Domain</h5></div></div>
                     </div>
                 </div>
 
@@ -359,8 +402,12 @@
                 <div class="category-group">
                     <div class="node"><h4>Improvements</h4></div>
                     <div class="request-type-block">
-                        <div class="request-type-container" data-target="imp-suggest" data-title="Suggest Improvement" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Suggest Improvement</h5></div></div>
-                        <div class="request-type-container" data-target="imp-process" data-title="Process /FAQ" onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Process /FAQ</h5></div></div>
+                        <div class="request-type-container" data-target="imp-suggest" data-title="Suggest Improvement" 
+                             data-config='{"Cesta": "Victoria Hoff", "SLA_Matrix": [{"Type": "Change", "N1": "3h", "N2": "3h", "ESP": "NA", "N3": "40h"}], "Workflow": "ITS: Change Management", "WorkflowLink": "https://cleveradvertising.atlassian.net/jira/settings/issues/workflows/cc28c057-797f-474c-ba25-783281515286"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Suggest Improvement</h5></div></div>
+                        <div class="request-type-container" data-target="imp-process" data-title="Process /FAQ" 
+                             data-config='{"Cesta": "Victoria Hoff", "SLA_Matrix": [{"Type": "Doc", "N1": "3h", "N2": "3h", "ESP": "NA", "N3": "NA"}], "Workflow": "ITS Workflow - Defaut Portal Technology v5"}'
+                             onclick="showPanel('form-detail-panel', this)"><div class="request-type-node"><h5>Process /FAQ</h5></div></div>
                     </div>
                 </div>
             </div>
@@ -388,7 +435,7 @@
             'advertising': `
                 <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
                 <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Description*</label><textarea rows="4" required placeholder="Rich text / HTML..."></textarea></div>
+                <div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div>
                 <div class="form-field-checkbox"><label>Meeting required?</label><input type="checkbox"> <span>Yes</span></div>
                 <div class="form-field-group"><label>Platform*</label><select required><option value="">Select...</option><option>CleverADS</option><option>Script</option><option>Mobile</option><option>Other</option></select></div>
                 <div class="form-field-group"><label>ScriptID</label><input type="text"></div>
@@ -431,50 +478,64 @@
                 <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
                 <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
                 <div class="form-field-group"><label>Access Type*</label><select required>
-                    <option value="">Select...</option><option>Aplicações Adobe</option><option>AWS</option><option>Canva</option><option>Checkpoint</option><option>CleverADS</option><option>Cloudflare</option><option>Confluence</option><option>Cyberghost</option><option>Docker</option><option>Express VPN</option><option>Figma</option><option>Fortinet</option><option>Gamma</option><option>Github</option><option>Google</option><option>Grafana</option><option>Grammarly</option><option>HMA</option><option>JIRA</option><option>Keeper</option><option>Microsoft EntraID</option><option>Miro</option><option>MS Pacote Office</option><option>NoCode</option><option>Others</option><option>PIA</option><option>Power BI</option><option>PureDome</option><option>S3</option><option>SimilarWeb</option><option>Slack</option><option>SOLDO Cards</option><option>Team Tailor</option><option>Teams</option><option>Vault</option><option>VPN</option><option>Zoho</option>
+                    <option value="">Select...</option><option>Aplicações Adobe</option><option>AWS</option><option>Canva</option><option>Checkpoint</option><option>CleverADS</option><option>Cloudflare</option><option>Confluence</option><option>Cyberghost</option><option>Docker</option><option>Express VPN</option><option>Figma</option><option>Fortinet</option><option>Gamma</option><option>Github</option><option>Google</option><option>Grafana</option><option>Grammarly</option><option>HMA</option><option>JIRA</option><option>Keeper</option><option>Kibana</option><option>Microsoft EntraID</option><option>Miro</option><option>MS Office</option><option>NoCode</option><option>Slack</option><option>Vault</option><option>VPN</option><option>Zoho</option>
                 </select></div>
                 <div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div>
                 <div class="form-field-group"><label>Attachment</label><input type="file"></div>
             `,
-            'access-internal': `
+            'access-internal': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Access Type*</label><select required><option value="">Select...</option><option>Approvals</option><option>B2B</option><option>Bold</option><option>CleverADS</option><option>Commission</option><option>No Code Operations</option></select></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
+            'access-email': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description</label><textarea rows="4"></textarea></div>`,
+            'soft-bold': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
+            'soft-cleverads': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
+            'soft-c2p': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
+            'soft-approvals': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
+            'soft-b2b': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
+            'soft-external': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Software Type*</label><select required><option value="Outros">Outros</option><option value="Core">Core</option><option value="AWS">AWS</option><option value="S3">S3</option><option value="Kibana">Kibana</option><option value="Advertising">Advertising</option></select></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
+            'out-admission': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Full Name*</label><input type="text" required></div><div class="form-field-group"><label>Start date*</label><input type="date" required></div>`,
+            'out-resignation': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Full Name*</label><input type="text" required></div><div class="form-field-group"><label>Last day*</label><input type="date" required></div>`,
+            'out-mobility': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>New function*</label><input type="text" required></div><div class="form-field-group"><label>Moving date*</label><input type="date" required></div>`,
+            'data-visualization': `<div class="form-field-group"><label>Raise behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
+            'sec-phishing': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Priority</label><select><option value="Low">Low</option><option value="Medium">Medium</option><option value="High">High</option></select></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
+            'sec-incident': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Priority</label><select><option value="Low">Low</option><option value="High">High</option></select></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
+            'sec-biometric': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
+            'sec-newsol': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
+            'web-site': `
                 <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
                 <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Access Type*</label><select required><option value="">Select...</option><option>Approvals</option><option>B2B</option><option>Bold</option><option>CleverADS</option><option>Commission</option><option>No Code Operations</option></select></div>
+                <div class="form-field-group"><label>Name of the responsible for the website*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Related to which domain?*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Description*</label><textarea rows="4" required placeholder="Normal text"></textarea></div>
                 <div class="form-field-group"><label>Attachment</label><input type="file"></div>
             `,
-            'soft-bold': `<div class="form-field-group"><label>Raise request on behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div><div class="form-field-group"><label>Priority</label><select><option value="Low">Low</option><option value="Medium">Medium</option><option value="High">High</option></select></div>`,
-            'soft-cleverads': `<div class="form-field-group"><label>Raise request on behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
-            'soft-c2p': `<div class="form-field-group"><label>Raise request on behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
-            'soft-approvals': `<div class="form-field-group"><label>Raise request on behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
-            'soft-b2b': `<div class="form-field-group"><label>Raise request on behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
-            'soft-external': `<div class="form-field-group"><label>Raise request on behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Software Type*</label><select required><option value="Outros">Outros</option><option value="Core">Core</option><option value="AWS">AWS</option><option value="S3">S3</option><option value="Kibana">Kibana</option><option value="Advertising">Advertising</option></select></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
-            'out-admission': `
-                <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Society/Company*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Full Name*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Function*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Responsible*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Start date*</label><input type="date" required></div>
-                <div class="form-field-group"><label>Personal email*</label><input type="email" required></div>
-            `,
-            'data-visualization': `
+            'web-domain': `
                 <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
                 <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
-                <div class="form-field-group"><label>Service Type*</label><select required><option value="">Select...</option><option>New Dashboard</option><option>Improvement</option><option>Data Bug</option></select></div>
-                <div class="form-field-group"><label>Description*</label><textarea rows="4" required placeholder="Normal text"></textarea></div>
+                <div class="form-field-group"><label>Domain's Name*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Name of the responsible for the domain*</label><input type="text" required></div>
+                <div class="form-field-group"><label>In which company's name will be?*</label><input type="text" required></div>
+                <div class="form-field-group"><label>Description</label><textarea rows="4" placeholder="Normal text"></textarea></div>
                 <div class="form-field-group"><label>Attachment</label><input type="file"></div>
                 <div class="form-field-group"><label>Priority</label><select><option value="Low" selected>Low</option><option value="Medium">Medium</option><option value="High">High</option></select></div>
             `,
-            'data-engineering': `<div class="form-field-group"><label>Raise request behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
-            'data-automation': `<div class="form-field-group"><label>Raise request behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
-            'data-costs': `<div class="form-field-group"><label>Raise request behalf of*</label><input type="text" required></div><div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
-            'sec-phishing': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Priority</label><select><option value="Low">Low</option><option value="Medium">Medium</option><option value="High">High</option></select></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
-            'sec-newsol': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Priority</label><select><option value="Low">Low</option><option value="Medium">Medium</option><option value="High">High</option></select></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
-            'sec-incident': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Priority</label><select><option value="Low">Low</option><option value="Medium">Medium</option><option value="High">High</option></select></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
-            'sec-biometric': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Priority</label><select><option value="Low">Low</option></select></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
-            'hard-accessories': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Item Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Priority</label><select><option>Low</option><option>High</option></select></div>`,
-            'hard-notebook': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description</label><textarea rows="4"></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
-            'hard-printer': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description</label><textarea rows="4"></textarea></div>`
+            'imp-suggest': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Suggestion*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`,
+            'imp-process': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Request*</label><textarea rows="4" required></textarea></div>`,
+            'hard-accessories': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description</label><textarea rows="4"></textarea></div>`,
+            'hard-notebook': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description</label><textarea rows="4"></textarea></div>`,
+            'hard-printer': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description</label><textarea rows="4"></textarea></div>`,
+            'net-wifi': `
+                <div class="form-field-group"><label>Raise this request on behalf of*</label><input type="text" placeholder="victoria.correa@clevercorporate.com" required></div>
+                <div class="form-field-group"><label>Summary*</label><input type="text" required></div>
+                <div class="form-field-group"><label>This ticket is related to which network issues?*</label><select required>
+                    <option value="">Select...</option>
+                    <option>Logical/Connectivity Problems (Slow internet, Internet down)</option>
+                    <option>Physical Network Problems (Cables, hardware, ports)</option>
+                    <option>Security or Firewall Problems (VPN configurations, blocked sites, access denied, firewall rules)</option>
+                </select></div>
+                <div class="form-field-group"><label>Description</label><textarea rows="4"></textarea></div>
+                <div class="form-field-group"><label>Attachment</label><input type="file"></div>
+                <div class="form-field-group"><label>Priority</label><select><option value="Low" selected>Low</option><option value="Medium">Medium</option><option value="High">High</option></select></div>
+            `,
+            'net-antivirus': `<div class="form-field-group"><label>Summary*</label><input type="text" required></div><div class="form-field-group"><label>Description*</label><textarea rows="4" required></textarea></div><div class="form-field-group"><label>Attachment</label><input type="file"></div>`
         };
 
         function showPanel(panelId, container) {
@@ -522,13 +583,14 @@
             const backContent = document.getElementById('backoffice-content');
             const title = container.getAttribute('data-title');
             const configData = container.getAttribute('data-config');
-            if (!configData) { backContent.innerHTML = `<h2>${title} - Admin</h2><p>Dados não configurados.</p>`; return; }
+            if (!configData) { backContent.innerHTML = `<h2>${title} - Admin</h2><p>Dados administrativos não configurados.</p>`; return; }
             const config = JSON.parse(configData);
             let html = `<h2>${title} - Admin</h2><div class="backoffice-grid"><div class="metadata-section"><h3>Configurações JSM</h3>`;
             for (let key in config) { 
                 if(key !== 'Labels' && key !== 'SLA_Matrix' && key !== 'WorkflowLink') {
                     if (key === 'Workflow') {
-                        html += `<div><strong>${key}:</strong> <a href="https://cleveradvertising.atlassian.net/jira/settings/issues/workflows/a2ce916a-1dce-405d-9fe1-14761df5373a" target="_blank" class="workflow-link">${config[key]}</a></div>`;
+                        const link = config['WorkflowLink'] || "https://cleveradvertising.atlassian.net/jira/settings/issues/workflows/a2ce916a-1dce-405d-9fe1-14761df5373a";
+                        html += `<div><strong>${key}:</strong> <a href="${link}" target="_blank" class="workflow-link">${config[key]}</a></div>`;
                     } else {
                         html += `<div><strong>${key}:</strong> ${config[key]}</div>`; 
                     }
